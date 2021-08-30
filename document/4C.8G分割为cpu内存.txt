@@ -1,0 +1,7 @@
+F column
+
+=LEFT(E2,1)&"核"
+
+G Column
+
+=IF(LEN(E2)=5,LEFT(RIGHT(E2,2),1)&"GB",LEFT(RIGHT(E2,3),2)&"GB")
