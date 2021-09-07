@@ -1,0 +1,32 @@
+将pem文件和key文件一并发到服务上（Nginx），并参考指导文档部署即可。
+Key文件和之前CSR文件一并产生并备份过的。
+
+您可以根据您的webserver的类型，Apache，Nginx，或Open SSL的版本进行设置。
+
+https://ssl-config.mozilla.org/
+
+部署完成后我们会对网站进行检测，告知您进一步优化。
+
+如有任何问题随时联系support-china@shangtrust.com
+
+类似百度Nginx
+ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH;
+
+ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+
+类似淘宝 Nginx
+ssl_ciphers EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
+
+ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+最好的安全性Nginx
+ssl_ciphers EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256::!MD5;
+
+ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+
+正确部署Diffie-Hellman
+
+https://weakdh.org/sysadmin.html 
+
+
