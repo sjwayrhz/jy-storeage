@@ -1,0 +1,5 @@
+### Redisson Config
+spring:
+  redis:
+    redisson:
+      config: classpath:config/redisson-single.yaml
