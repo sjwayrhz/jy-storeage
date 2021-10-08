@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<Root>
+  <Item ID="1" Index="1" IsDeleted="0" Html="快速文本可以避免重复输入常用的内容" HotKey="0" Title="快速文本可以避免重复输入常用的内容" DefTitle="1"/>
+  <Item ID="2" Index="2" IsDeleted="0" Html="双击快速文本，就能粘贴到写信区域" HotKey="0" Title="双击快速文本，就能粘贴到写信区域" DefTitle="1"/>
+  <Item ID="3" Index="3" IsDeleted="0" Html="点击右上角按钮可以添加、删除、修改" HotKey="0" Title="点击右上角按钮可以添加、删除、修改" DefTitle="1"/>
+</Root>

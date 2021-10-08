@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<SMTP>
+		<code sub="DT:RBL" descript="發信IP位於一個或多個RBL里。請參考http://www.rbls.org/關於RBL的相關內容；"/>
+		<code sub="DT:SPM" descript="傳送的郵件內容包含了未被許可的內容，或被系統識別為垃圾郵件。"/>
+		<code sub="DT:SUM" descript="信封寄件人和信頭寄件人不匹配；"/>
+		<code sub="HL:ICC" descript="該IP同時并發連線數過大，超過了網易的限制，被臨時禁止連線。請檢查是否有用戶傳送病毒或者垃圾郵件，并降低IP并發連線數量；"/>
+		<code sub="HL:IFC" descript="該IP短期內傳送了大量信件，超過了限制，被臨時禁止連線。請檢查是否有用戶傳送病毒或者垃圾郵件，并降低傳送頻率；"/>
+		<code sub="HL:IHU" descript="發信IP因傳送垃圾郵件或存在異常的連線行為，被暫時掛起。請檢測發信IP在歷史上的發信情況和發信程式是否存在異常；"/>
+		<code sub="HL:IPB" descript="該IP不在允許的傳送地址清單裡；"/>
+		<code sub="HL:MEP" descript="該IP傳送行為異常，存在大量偽造傳送域域名行為，被臨時禁止連線。請檢查是否有用戶傳送病毒或者垃圾郵件，并使用真實有效的域名傳送；"/>
+		<code sub="HL:REP" descript="該IP傳送行為異常，存在接收者大量不存在情況，被臨時禁止連線。請檢查是否有用戶傳送病毒或者垃圾郵件，并核對傳送清單有效性；"/>
+		<code sub="MI:CEL" descript="傳送方出現過多的錯誤指令。請檢查發信程式；"/>
+		<code sub="MI:CCL" descript="傳送方傳送超出正常的指令數量。請檢查發信程式；"/>
+		<code sub="MI:DMA" descript="該郵件未被發信域的DMARC許可。請參考http://dmarc.org/關於DMARC規範的定義；"/>
+		<code sub="MI:DMC" descript="目前連線傳送的郵件數量超出限制。請減少每次連線中投遞的郵件數量；"/>
+		<code sub="MI:IMF" descript="發信人電子郵件地址不合規範。請參考http://www.rfc-editor.org/關於電子郵件規範的定義；"/>
+·		<code sub="MI:NHD" descript="HELO命令不允許為空；"/>
+		<code sub="MI:SPF" descript="發信IP未被傳送域的SPF許可。請參考http://www.openspf.org/關於SPF規範的定義；"/>
+		<code sub="MI:SFQ" descript="發信人在15分鐘內的發信數量超過限制，請控制發信頻率；"/>
+		<code sub="MI:STC" descript="寄件人當天內累計郵件數量超過限制，當天不再接受該寄件人的投信。請降低發信頻率；"/>
+		<code sub="MI:SPB" descript="此用戶不在允許的發信用戶清單裡；"/>
+		<code sub="WM:BLI" descript="該IP不在允許的傳送地址清單裡；"/>
+		<code sub="WM:BLU" descript="此用戶不在允許的發信用戶清單裡；"/>
+		<code sub="RP:CCL" descript="傳送方傳送超出正常的指令數量。請檢查發信程式；"/>
+		<code sub="RP:CEL" descript="傳送方出現過多的錯誤指令。請檢查發信程式；"/>
+		<code sub="RP:DRC" descript="目前連線傳送的收件人數量超出限制。請控制每次連線投遞的郵件數量；"/>
+		<code sub="RP:QRC" descript="發信方短期內累計的收件人數量超過限制，該寄件人被臨時禁止發信。請降低該用戶發信頻率；"/>
+		<code sub="RP:FRL" descript="易郵箱不開放匿名轉寄（Open relay）；"/>
+		<code sub="RP:RCL" descript="群發收件人數量超過了限額，請減少每封郵件的收件人數量；"/>
+		<code sub="RP:TRC" descript="寄件人當天內累計的收件人數量超過限制，當天不再接受該寄件人的郵件。請降低該用戶發信頻率；"/>
+		<code sub="authentication is required" descript="SMTP需要身份驗證，請檢查帳號屬性設定，打開eSMTP選項；"/>
+		<code sub="bad syntaxU" descript="傳送的smtp命令語法有誤；"/>
+		<code sub="Illegal Attachment" descript="不允許傳送該類型的附件，包括以.uu .pif .scr .mim .hqx .bhx .cmd .vbs .bat .com .vbe .vb .js .wsh等結尾的附件；"/>
+		<code sub="Invalid User" descript="請求的用戶不存在；"/>
+		<code sub="local error in processing" descript="系統暫時出現故障，請稍後再次嘗試傳送；"/>
+		<code sub="IP is rejected" descript="該IP驗證失敗次數過多，被臨時禁止連線。"/>
+		<code sub="IP in blacklist" descript="該IP不在允許的傳送地址清單裡。"/>
+		<code sub="too much recipient" descript="本郵件傳送的人數超過了限額；"/>
+		<code sub="mailsize limit" descript="傳送的信件大小超過了郵箱允許接收的最大限制；"/>
+		<code sub="no smtp MX only" descript="MX類型的機器不允許發信人是本站用戶；"/>
+		<code sub="NULL sender is not allowed" descript="不允許寄件人為空，請使用真實寄件人傳送；"/>
+		<code sub="too much fail authentication" descript="登錄失敗次數過多，被臨時禁止登錄。請檢查密碼與帳號驗證設定；"/>
+		<code sub="User in blacklist" descript="用戶被列入黑名單"/>
+		<code sub="User suspended" descript="用戶處於禁用或者凍結狀態；"/>
+	</SMTP>
+	<POP3>
+	</POP3>
+	<IMAP>
+	</IMAP>
+</Root>

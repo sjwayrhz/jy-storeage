@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root 
+	Active="1" 
+	URL="http://hao.360.cn/rili/onebox.html?action=query&amp;year=%year%&amp;month=%month%&amp;day=%day%"
+	Width="537"
+	Height="427"
+	
+>
+  <Script><![CDATA[
+$(".almanac-extra").css("height", "163px");
+$(".label-his").hide();
+$(".calendar").on("click", "li, .btn-today", function(){
+  window.external.SetDate($(".date").text())
+});
+    ]]></Script>
+
+</Root>

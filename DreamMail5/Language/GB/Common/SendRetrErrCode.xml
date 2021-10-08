@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<SMTP>	
+		<code sub="DT:RBL"    descript="发信IP位于一个或多个RBL里。请参考http://www.rbls.org/关于RBL的相关信息；"/>
+		<code sub="DT:SPM"    descript="发送的邮件内容包含了未被许可的信息，或被系统识别为垃圾邮件。"/>
+		<code sub="DT:SUM"    descript="信封发件人和信头发件人不匹配；"/>
+		<code sub="HL:ICC"    descript="该IP同时并发连接数过大，超过了网易的限制，被临时禁止连接。请检查是否有用户发送病毒或者垃圾邮件，并降低IP并发连接数量；"/>
+		<code sub="HL:IFC"    descript="该IP短期内发送了大量信件，超过了限制，被临时禁止连接。请检查是否有用户发送病毒或者垃圾邮件，并降低发送频率；"/>
+		<code sub="HL:IHU"    descript="发信IP因发送垃圾邮件或存在异常的连接行为，被暂时挂起。请检测发信IP在历史上的发信情况和发信程序是否存在异常；"/>
+		<code sub="HL:IPB"    descript="该IP不在允许的发送地址列表里；"/>
+		<code sub="HL:MEP"    descript="该IP发送行为异常，存在大量伪造发送域域名行为，被临时禁止连接。请检查是否有用户发送病毒或者垃圾邮件，并使用真实有效的域名发送；"/>
+		<code sub="HL:REP"    descript="该IP发送行为异常，存在接收者大量不存在情况，被临时禁止连接。请检查是否有用户发送病毒或者垃圾邮件，并核对发送列表有效性；"/>
+		<code sub="MI:CEL"    descript="发送方出现过多的错误指令。请检查发信程序；"/>
+		<code sub="MI:CCL"    descript="发送方发送超出正常的指令数量。请检查发信程序；"/>
+		<code sub="MI:DMA"    descript="该邮件未被发信域的DMARC许可。请参考http://dmarc.org/关于DMARC规范的定义；"/>
+		<code sub="MI:DMC"    descript="当前连接发送的邮件数量超出限制。请减少每次连接中投递的邮件数量；"/>
+		<code sub="MI:IMF"    descript="发信人电子邮件地址不合规范。请参考http://www.rfc-editor.org/关于电子邮件规范的定义；"/>
+·		<code sub="MI:NHD"    descript="HELO命令不允许为空；"/>
+		<code sub="MI:SPF"    descript="发信IP未被发送域的SPF许可。请参考http://www.openspf.org/关于SPF规范的定义；"/>
+		<code sub="MI:SFQ"    descript="发信人在15分钟内的发信数量超过限制，请控制发信频率；"/>
+		<code sub="MI:STC"    descript="发件人当天内累计邮件数量超过限制，当天不再接受该发件人的投信。请降低发信频率；"/>
+		<code sub="MI:SPB"    descript="此用户不在允许的发信用户列表里；"/>
+
+		<code sub="WM:BLI"    descript="该IP不在允许的发送地址列表里；"/>
+		<code sub="WM:BLU"    descript="此用户不在允许的发信用户列表里；"/>
+		<code sub="RP:CCL"    descript="发送方发送超出正常的指令数量。请检查发信程序；"/>
+		<code sub="RP:CEL"    descript="发送方出现过多的错误指令。请检查发信程序；"/>
+		<code sub="RP:DRC"    descript="当前连接发送的收件人数量超出限制。请控制每次连接投递的邮件数量；"/>
+		<code sub="RP:QRC"    descript="发信方短期内累计的收件人数量超过限制，该发件人被临时禁止发信。请降低该用户发信频率；"/>
+		<code sub="RP:FRL"    descript="易邮箱不开放匿名转发（Open relay）；"/>
+		<code sub="RP:RCL"    descript="群发收件人数量超过了限额，请减少每封邮件的收件人数量；"/>
+		<code sub="RP:TRC"    descript="发件人当天内累计的收件人数量超过限制，当天不再接受该发件人的邮件。请降低该用户发信频率；"/>
+
+		<code sub="authentication is required"    descript="SMTP需要身份验证，请检查帐号属性设置，打开eSMTP选项；"/>
+		<code sub="bad syntaxU"    descript="发送的smtp命令语法有误；"/>
+		<code sub="Illegal Attachment"    descript="不允许发送该类型的附件，包括以.uu .pif .scr .mim .hqx .bhx .cmd .vbs .bat .com .vbe .vb .js .wsh等结尾的附件；"/>
+		<code sub="Invalid User"    descript="请求的用户不存在；"/>
+		<code sub="local error in processing"    descript="系统暂时出现故障，请稍后再次尝试发送；"/>
+		<code sub="IP is rejected"    descript="该IP验证失败次数过多，被临时禁止连接。"/>
+		<code sub="IP in blacklist"    descript="该IP不在允许的发送地址列表里。"/>
+		<code sub="too much recipient"    descript="本邮件发送的人数超过了限额；"/>
+		<code sub="mailsize limit"    descript="发送的信件大小超过了邮箱允许接收的最大限制；"/>
+		<code sub="no smtp MX only"    descript="MX类型的机器不允许发信人是本站用户；"/>
+		<code sub="NULL sender is not allowed"    descript="不允许发件人为空，请使用真实发件人发送；"/>
+		<code sub="too much fail authentication"    descript="登录失败次数过多，被临时禁止登录。请检查密码与帐号验证设置；"/>
+		<code sub="User in blacklist"    descript="用户被列入黑名单"/>
+		<code sub="User suspended"    descript="用户处于禁用或者冻结状态；"/>
+
+	</SMTP>
+
+	<POP3>
+	</POP3>
+
+	<IMAP>
+	</IMAP>
+</Root>

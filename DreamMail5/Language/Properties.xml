@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<TdxRibbonPopupMenu/>
+	<TdxBarApplicationMenu/>
+	<TdxRibbonDropDownGallery/>
+	<TcxLabelProperties/>
+	<TcxImageProperties/>
+	<TcxCheckBoxProperties/>
+	<TRichEditStrings/>
+	<TcxRichEditStrings/>
+	<TKSEditX/>
+	<TStrings/>
+	<TcxEditStyle/>
+	<TActionList/>
+	<TPopupMenu/>
+	<TcxGridLevel/>
+	<TcxGridDBTableView/>
+	<TClientDataSet/>
+	<TDataSource/>
+	<TImageList/>
+	<TcxImageList/>
+	<TdxRibbonTabGroup/>
+	<TdxBarManager/>
+	<TTimer/>
+	<TdxBarPopupMenu/>
+	<TcxStyleRepository/>
+	<TcxStyle/>
+	<TcxGridTableViewStyleSheet/>
+	<TdxMemData/>
+	<TIntegerField/>
+	<TDateTimeField/>
+	<TStringField/>
+	<TBlobField/>
+	<TcxSchedulerDBStorage/>
+	<TBevel/>
+	<TDmFlatPageControl/>
+	<TScrollBox/>
+	<TcxScrollBar/>
+	<TColorDialog/>
+	<TdxBevel/>
+	<TcxGridPopupMenu/>
+	<TcxSchedulerStorage/>
+	<TcxHintStyleController/>
+	<TWebBrowser/>
+	<TdxColorGallery/>
+	<TEdit StrProps="Hint,Text"/>
+	<TMemo StrProps="Hint" SubObjs="Lines"/>
+	<TAction StrProps="Caption,Hint"/>
+	<TTrayIcon StrProps="BalloonHint,BalloonTitle,Hint"/>
+	<TMenuItem StrProps="Caption,Hint"/>
+	<TPanel StrProps="Caption,Hint"/>
+	<TLabel StrProps="Caption,Hint"/>
+	<TShape StrProps="Hint"/>
+	<TRichEdit StrProps="Hint" SubObjs="Lines"/>
+	<TImage StrProps="Hint"/>
+	<TEmbeddedWB StrProps="Hint"/>
+	<TPaintBox StrProps="Hint"/>
+	<TOpenDialog StrProps="Title"/>
+	<TSaveDialog StrProps="Title"/>
+	<TOpenPictureDialog StrProps="Title"/>
+	<TButton StrProps="Caption,Hint"/>
+	<TAdvListEditor StrProps="Hint"/>
+	<TcxProgressBar StrProps="Hint" SubObjs="Properties"/>
+	<TcxProgressBarProperties StrProps="Text"/>
+	<TcxRadioButton StrProps="Caption,Hint"/>
+	<TcxSpinEdit StrProps="Hint"/>
+	<TcxDateEdit StrProps="Hint,TextHint" SubObjs="Properties"/>
+	<TcxDateEditProperties StrProps="Nullstring"/>
+	<TcxColorComboBox StrProps="Hint" SubObjs="Properties"/>
+	<TcxColorComboBoxProperties SubObjs="CustomColors"/>
+	<TcxColorComboBoxItems IsCollection="1"/>
+	<TcxColorComboBoxItems StrProps="Description"/>
+	<TcxGridTableView SubObjs="OptionsView,DataController"/>
+	<TcxGridDataController SubObjs="Summary"/>
+	<TcxDataSummary SubObjs="DefaultGroupSummaryItems"/>
+	<TcxDataGroupSummaryItems IsCollection="1"/>
+	<TcxGridTableSummaryItem StrProps="DisplayText,Format"/>
+	<TcxGridTableOptionsView StrProps="NoDataToDisplayInfoText"/>
+	<TcxButtonEdit StrProps="Hint,Text,TextHint"/>
+	<TcxButtonEditProperties StrProps="Nullstring" SubObjs="Buttons"/>
+	<TcxEditButtons IsCollection="1"/>
+	<TcxEditButton StrProps="Caption,Hint"/>
+	<TcxCheckBox StrProps="Caption,Hint"/>
+	<TcxButton StrProps="Caption,Hint"/>
+	<TcxComboBox StrProps="Hint,Text,TextHint" SubObjs="Properties"/>
+	<TcxComboBoxProperties StrProps="Nullstring" SubObjs="Items"/>
+	<TcxLabel StrProps="Caption,Hint"/>
+	<TcxTreeList StrProps="Hint"/>
+	<TcxTreeListColumn SubObjs="Properties,Caption"/>
+	<TcxTreeListCaption StrProps="Text"/>
+	<TcxGrid StrProps="Hint"/>
+	<TcxGridDBColumn StrProps="Caption,HeaderHint" SubObjs="Properties"/>
+	<TcxGridColumn StrProps="Caption,HeaderHint" SubObjs="Properties"/>
+	<TcxSplitter StrProps="Hint"/>
+	<TcxImage StrProps="Hint"/>
+	<TcxRichEdit StrProps="Hint" SubObjs="Lines"/>
+	<TcxPageControl StrProps="Hint" SubObjs="Properties"/>
+	<TcxPageControlProperties SubObjs="CustomButtons"/>
+	<TcxPCCustomButtons SubObjs="Buttons"/>
+	<TcxPCButtons IsCollection="1"/>
+	<TcxPCButton StrProps="Hint"/>
+	<TcxTabSheet StrProps="Caption,Hint"/>
+	<TcxScrollBox StrProps="Hint"/>
+	<TcxPopupEdit StrProps="Hint,Text" SubObjs="Properties"/>
+	<TcxPopupEditProperties StrProps="Nullstring"/>
+	<TcxCheckComboBox StrProps="Hint" SubObjs="Properties"/>
+	<TcxCheckComboBoxProperties StrProps="EmptySelectionText" SubObjs="Items"/>
+	<TcxCheckComboBoxItems IsCollection="1"/>
+	<TcxCheckComboBoxItem StrProps="Description,ShortDescription"/>
+	<TcxTextEdit StrProps="Hint,Text,TextHint" SubObjs="Properties"/>
+	<TcxTextEditProperties StrProps="Nullstring" SubObjs="LookupItems"/>
+	<TcxRadioGroup StrProps="Caption,Hint" SubObjs="Properties"/>
+	<TcxRadioGroupProperties StrProps="DefaultCaption" SubObjs="Items"/>
+	<TcxRadioGroupItems IsCollection="1"/>
+	<TcxRadioGroupItem StrProps="Caption"/>
+	<TcxListView StrProps="Hint"/>
+	<TcxImageComboBox StrProps="Hint" SubObjs="Properties"/>
+	<TcxImageComboBoxProperties StrProps="DefaultDescription" SubObjs="Items"/>
+	<TcxImageComboBoxItems IsCollection="1"/>
+	<TcxImageComboBoxItem StrProps="Description"/>
+	<TdxRibbon StrProps="Hint"/>
+	<TdxRibbonTab StrProps="Caption,KeyTip" SubObjs="Groups"/>
+	<TdxRibbonTabGroups IsCollection="1"/>
+	<TdxRibbonStatusBar StrProps="Hint" SubObjs="Panels"/>
+	<TdxStatusBarPanels IsCollection="1"/>
+	<TdxStatusBarPanel StrProps="Text"/>
+	<TdxRibbonBackstageView StrProps="Hint"/>
+	<TdxRibbonBackstageViewTabSheet StrProps="Caption,Hint"/>
+	<TdxBar StrProps="Caption,KeyTip" SubObjs="CaptionButtons"/>
+	<TdxBarCaptionButtons IsCollection="1"/>
+	<TdxBarCaptionButton StrProps="Hint,KeyTip"/>
+	<TdxBarLargeButton StrProps="Caption,KeyTip,Hint"/>
+	<TdxBarButton StrProps="Caption,KeyTip,Hint"/>
+	<TdxRibbonGalleryItem StrProps="Caption,KeyTip,Hint"/>
+	<TdxRibbonGalleryGroup SubObjs="Header"/>
+	<TdxRibbonGalleryGroupHeader StrProps="Caption"/>
+	<TdxBarSubItem StrProps="Caption,KeyTip,Hint"/>
+	<TdxBarMRUListItem StrProps="Caption,KeyTip,Hint"/>
+	<TdxBarCombo StrProps="Caption,Hint,Text,KeyTip" SubObjs="Items"/>
+	<TdmShape StrProps="Hint"/>
+	<TcxGroupBox StrProps="Caption,Hint"/>
+	<TdxBarControlContainerItem StrProps="Caption,KeyTip,Hint"/>
+	<TcxMemo StrProps="Hint" SubObjs="Lines"/>
+	<TDmSizePanel StrProps="Caption,Hint"/>
+	<TcxDateNavigator StrProps="Hint"/>
+	<TcxScheduler StrProps="Hint"/>
+	<TcxBarEditItem StrProps="Caption,KeyTip,Hint" SubObjs="Properties"/>
+	<TcxHeader SubObjs="Hint,Sections"/>
+	<TcxHeaderSections IsCollection="1"/>
+	<TcxHeaderSection StrProps="Text"/>
+	<TcxTabControl StrProps="Hint" SubObjs="Properties"/>
+	<TcxTabControlProperties SubObjs="Tabs"/>
+	<TPageControl StrProps="Hint"/>
+	<TTabSheet StrProps="Caption,Hint"/>
+	<TListBox StrProps="Hint" SubObjs="Items"/>
+	<TcxTimeEdit StrProps="Hint"/>
+	<TcxMaskEdit StrProps="Hint,Text,TextHint"/>
+	<TdxBarImageCombo StrProps="Caption,Hint" SubObjs="Items"/>
+	<TdxBarListItem StrProps="Caption,Hint" SubObjs="Items"/>
+	<TdxBarContainerItem StrProps="Caption,Hint"/>
+	<TdxBarStatic StrProps="Caption,Hint"/>
+	<TGroupBox StrProps="Caption,Hint"/>
+	<TcxListBox StrProps="Hint" SubObjs="Items"/>
+	<TdxZoomTrackBar StrProps="Hint"/>
+	<THotKey StrProps="Hint"/>
+	<TdmHotLabel StrProps="Caption,Hint"/>
+	<TcxSearchEdit StrProps="Hint,Text" SubObjs="Properties"/>
+	<TcxSearchButtonEditProperties/><TcxGridCardView/><TcxGridCardViewRow/><TcxCalcEditProperties/><TcxFontNameComboBox/><TSpeedButton/><TcxCurrencyEdit/><TApplicationEvents/><TCheckBox/><TdxBarDateCombo/><TSQLConnection/><TdxToggleSwitch/><TNotebook/></Root>

@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<Root>
+   <!--Item
+	Host="hotmail.com"		{域名，指邮箱“@”后面的部分，用小写。多个域名可以用";,"分割，多域名并列参考hotmail.com的写法}
+	ClientLoginNeedOpen="1"		{标识这个域名的邮箱，需要在服务器上设置开启POP3/IMAP/SMTP才能用客户端收信。值为1时，用户添加帐号时无法通过密码验证，会弹出对应的提示}
+	Pop3Server="pop3.live.com"	{POP3 服务器地址}
+	Pop3SSL="2"			{POP3 SSL类型，默认值2。可取值范围：0=不使用SSL，1=SSLv2， 2=SSLv23, 3=SSLv3, 4=TLSv1；SSLv2是不安全的版本，多数服务器不支持了}
+	Pop3TLS="0"			{POP3 TLS类型，默认值1。可取值范围：0=NoTLSSupport，1=ImplicitTLS，2=RequireTLS, 3=ExplicitTLS}
+	Pop3Port="995"			{POP3 端口；默认值当有SSL=995、无SSL=110}
+	Pop3LoginByEmail="1"		{POP3 登录时，是否使用邮件地址作为登录名，默认值1。可取值范围：1=邮箱地址；0=邮箱地址@前面部分}
+	Pop3LoginType="0"		{POP3 登录类型，默认值0。可取值范围：0=UserPass, 1=APOP, 2=SASL}
+	ImapServer=""			{IMAP 服务器地址}
+	ImapSSL="0"			{IMAP SSL类型，参考POP3的}
+	ImapTLS="0"			{IMAP TLS类型，参考POP3的}
+	ImapPort="143"			{IMAP 端口；默认值当有SSL=993、无SSL=143}
+	ImapLoginByEmail="0"		{IMAP 登录时，是否使用邮件地址作为登录名，取值参考POP3的}
+	ImapLoginType="0"		{IMAP 登录类型，默认值0.可取值范围：0=UserPass, 1=SASL}
+	ImapNoValidFolder=""		{无效的Imap邮件夹名称，参考163的设置，这些文件夹名称，默认不会在邮件夹列表展现出来}
+	DefReceiveType="IMAP"		{默认收信方式，取值：POP3、IMAP}
+	SmtpServer="smtp.live.com"	{SMTP 服务器地址}
+	SmtpSSL="2"			{SMTP SSL类型，参考POP3的}
+	SmtpTLS="0"			{SMTP TLS类型，参考POP3的}
+	SmtpPort="587"			{SMTP 端口；默认值当有SSL=587、无SSL=25，常用端口：25、465、587}
+	SmtpLoginByEmail="0"		{SMTP 登录时，是否使用邮件地址作为登录名，参考POP3的}
+	SmtpLoginType="1"		{SMTP 登录类型，默认值1。可取值范围：0=不必登录, 1=UserPass,2=SASL}
+	SmtpUsedStartTls="0"		{SMTP StartTLS支持，默认值=1，可取值范围：0=不支持，1=支持}
+
+	CoremailBaseURL="https://mail.secmail.360.cn/coremail/"  {Coremail私有接口访问URL}
+	IsEnterpriseMailbox="0"		{是否是企业邮局。默认值0，可取值范围: 0=不是，1=是；当设置为企业邮局后，Host值是通过mx解析出来的标识字符，而不一定是域名；添加邮箱帐号时，如果无法命中常用的host匹配，则会进行mx解析来判断处理}
+	
+	
+	-->
+
+  <!-- 常用邮箱的配置，按占有率排序 -->  
+  <Item  Host="163.com"  DefReceiveType="IMAP" 
+		 ImapServer="imap.163.com" ImapSSL="2"
+		 Pop3Server="pop.163.com"  Pop3SSL="2"
+		 SmtpServer="smtp.163.com" SmtpSSL="2"
+		 ImapNoValidFolder="病毒文件夹;广告邮件;订阅邮件;Archives;Notes"
+		 ClientLoginNeedOpen="1"
+		 AddAccountHelpUrl="http://bbs.360safe.com/thread-6324113-1-1.html"
+		 />
+
+  <Item  Host="126.com"  DefReceiveType="IMAP" 
+		 ImapServer="imap.126.com" ImapSSL="2"
+		 Pop3Server="pop.126.com"  Pop3SSL="2"
+		 SmtpServer="smtp.126.com" SmtpSSL="2"
+		 ImapNoValidFolder="病毒文件夹;广告邮件;订阅邮件;Archives;Notes"
+		 ClientLoginNeedOpen="1"
+		 AddAccountHelpUrl="http://bbs.360safe.com/thread-6324113-1-1.html"
+		 />
+
+  <Item  Host="qq.com;foxmail.com" DefReceiveType="POP3"
+		 ImapServer="imap.qq.com" ImapSSL="2"
+		 Pop3Server="pop.qq.com" Pop3SSL="2"
+		 SmtpServer="smtp.qq.com" SmtpSSL="2"
+		 ClientLoginNeedOpen="1"
+		 AddAccountHelpUrl="http://bbs.360safe.com/thread-6556555-1-1.html"
+		 />
+
+  <Item  Host="sina.com" 
+		 ImapServer="imap.sina.com" ImapSSL="2"
+		 Pop3Server="pop.sina.com" Pop3SSL="2"
+		 SmtpServer="smtp.sina.com" SmtpSSL="2"
+		 ImapNoValidFolder="其他邮件;订阅邮件;星标邮件;商讯信息;网站通知"
+		 ClientLoginNeedOpen="1"
+		 />
+
+  <Item  Host="hotmail.com;live.com;msn.com;outlook.com;live.cn;msn.cn" 
+		 ImapServer="imap-mail.outlook.com" ImapSSL="2"
+		 Pop3Server="pop-mail.outlook.com" Pop3SSL="2" Pop3TLS="1"
+		 SmtpServer="smtp.live.com" SmtpPort="587" SmtpSSL="2"  SmtpTLS="2"	 SmtpUsedStartTls="1"
+		 ClientLoginNeedOpen="1"
+		 />
+
+  <Item  Host="gmail.com" DefReceiveType="IMAP" 
+		 ImapServer="imap.gmail.com" ImapSSL="2" 
+		 Pop3Server="pop.gmail.com" Pop3SSL="2" 
+		 SmtpServer="smtp.gmail.com" SmtpPort="465" SmtpSSL="2" 
+		 ImapNoValidFolder="[Gmail]"
+		 />
+
+  <Item  Host="yahoo.com" DefReceiveType="IMAP" 
+		 ImapServer="imap.mail.yahoo.com" ImapSSL="2" 
+		 Pop3Server="pop.mail.yahoo.com" Pop3SSL="2" 
+		 SmtpServer="smtp.mail.yahoo.com" SmtpPort="465" SmtpSSL="2" 
+		 />
+
+  <Item  Host="189.cn" 
+		 Pop3Server="pop.189.cn" 
+		 SmtpServer="smtp.189.cn" 
+		 />
+
+  <Item  Host="139.com" DefReceiveType="IMAP" 
+		 ImapServer="imap.139.com" ImapSSL="2"
+		 Pop3Server="pop3.139.com" Pop3SSL="2"
+		 SmtpServer="smtp.139.com" SmtpSSL="2"
+		 />
+
+  <Item  Host="21cn.com" 
+		 Pop3Server="pop.21cn.com"  
+		 SmtpServer="smtp.21cn.com" 
+		 />
+
+  <Item  Host="sina.cn" 
+		 ImapServer="imap.sina.cn" ImapSSL="2"
+		 Pop3Server="pop.sina.cn" Pop3SSL="2"
+		 SmtpServer="smtp.sina.cn" SmtpSSL="2"
+		 ImapNoValidFolder="其他邮件;订阅邮件;星标邮件;商讯信息;网站通知"
+		 />
+
+  <Item  Host="sohu.com" 
+		 Pop3Server="pop.sohu.com" 
+		 ImapServer="imap.sohu.com"  
+		 SmtpServer="smtp.sohu.com" 
+		 />
+
+  <Item  Host="263.net" 
+		 Pop3Server="263.net"  
+		 SmtpServer="smtp.263.net" 
+		 />
+
+  <Item  Host="163.net"
+		 Pop3Server="pop.tom.com"  
+		 SmtpServer="smtp.tom.com" 
+		 ClientLoginNeedOpen="1"
+		 AddAccountHelpUrl="http://bbs.360safe.com/thread-6324113-1-1.html"
+		 />
+
+  <Item  Host="188.com" 
+		 Pop3Server="pop.188.com"  
+		 SmtpServer="smtp.188.com" 
+		 ClientLoginNeedOpen="1"
+		 AddAccountHelpUrl="http://bbs.360safe.com/thread-6324113-1-1.html"
+		 />
+
+  <Item  Host="sogou.com" 
+		 Pop3Server="pop.sogou.com"  
+		 SmtpServer="smtp.sogou.com" 
+		 />
+
+  <Item  Host="yeah.net" DefReceiveType="IMAP" 
+		 ImapServer="imap.yeah.net" ImapSSL="2" 
+		 Pop3Server="pop.yeah.net" Pop3SSL="2" 
+		 SmtpServer="smtp.yeah.net" SmtpSSL="2"
+		 ImapNoValidFolder="病毒文件夹;广告邮件;订阅邮件;Archives;Notes"
+		 ClientLoginNeedOpen="1"
+		 AddAccountHelpUrl="http://bbs.360safe.com/thread-6324113-1-1.html"
+		 />
+	
+  <Item  Host="cac.gov.cn"  DefReceiveType="IMAP" 
+		 ImapServer="webmail.cac.gov.cn" ImapSSL="2"
+		 Pop3Server="webmail.cac.gov.cn" Pop3SSL="2"
+		 SmtpServer="webmail.cac.gov.cn" SmtpSSL="2"
+		 />
+
+
+  <!-- 企业邮箱的配置： Host的内容是指MX解析返回包含的字符串信息 --> 
+  <Item  Host=".qq.com" IsEnterpriseMailbox="1" 
+		 Pop3Server="pop.exmail.qq.com" Pop3Port="995" Pop3SSL="2"  Pop3LoginByEmail="1" 
+		 SmtpServer="smtp.exmail.qq.com"  SmtpPort="465" SmtpSSL="2"
+		 WebMailLoginHost="https://exmail.qq.com/login"
+		 />
+
+  <!-- 163免费邮箱 -->
+  <Item  Host=".ym.163.com;.ym.netease." IsEnterpriseMailbox="1" DefReceiveType="IMAP" 
+		 Pop3Server="pop.ym.163.com" Pop3Port="995" Pop3SSL="2"  Pop3LoginByEmail="1" 
+		 ImapServer="imap.ym.163.com" ImapPort="993" ImapSSL="2" ImapLoginType="1" 
+		 ImapNoValidFolder="病毒文件夹;广告邮件;订阅邮件;Archives;Notes"
+		 SmtpServer="smtp.ym.163.com" SmtpPort="587" SmtpSSL="2" SmtpTLS="1"
+		 />
+
+  <!-- 163收费邮箱 -->
+  <Item  Host=".qiye.163.com;.qiye.netease." IsEnterpriseMailbox="1" DefReceiveType="IMAP" 
+		 Pop3Server="pop.qiye.163.com" Pop3Port="995" Pop3SSL="2"  Pop3LoginByEmail="1" 
+		 ImapServer="imap.qiye.163.com" ImapPort="993" ImapSSL="2" ImapLoginType="1" 
+		 ImapNoValidFolder="病毒文件夹;广告邮件;订阅邮件;Archives;Notes"
+		 SmtpServer="smtp.qiye.163.com" SmtpPort="587" SmtpSSL="2" SmtpTLS="1"
+		 />
+
+
+  <Item  Host=".alibaba.com" IsEnterpriseMailbox="1" DefReceiveType="IMAP" 
+		 Pop3Server="imap.alibaba.com" Pop3LoginByEmail="1" 
+		 ImapServer="imap.alibaba.com" ImapLoginType="1" 
+		 SmtpServer="smtp.alibaba.com" SmtpTLS="1" 
+		 />  
+
+  <Item  Host=".263xmail.com" IsEnterpriseMailbox="1" DefReceiveType="IMAP" 
+		 ImapServer="imapcom.263xmail.com" ImapLoginType="1" 
+		 Pop3Server="popcom.263xmail.com" Pop3LoginByEmail="1" 
+		 SmtpServer="smtpcom.263xmail.com" SmtpTLS="1"
+		 WebMailLoginHost="http://www.263.net"
+		 />
+
+  <Item  Host=".gmail.com;.googlemail.com" IsEnterpriseMailbox="1" DefReceiveType="IMAP"  
+		 ImapServer="imap.gmail.com" ImapPort="993" ImapSSL="2" 
+		 Pop3Server="pop.gmail.com" Pop3Port="995" Pop3SSL="2" 
+		 SmtpServer="smtp.gmail.com" SmtpPort="465" SmtpSSL="2" 
+		 />
+
+  <Item  Host="-com.mail.eo.outlook.com;.office365.com" IsEnterpriseMailbox="1" DefReceiveType="IMAP"  
+		 ImapServer="outlook.office365.com" ImapPort="993" ImapSSL="2" 
+		 Pop3Server="outlook.office365.com" Pop3Port="995" Pop3SSL="2" 
+		 SmtpServer="outlook.office365.com" SmtpPort="587" SmtpSSL="2"  SmtpTLS="2" SmtpUsedStartTls="1"
+		 />
+		
+  <!-- 360 安全邮件-->
+  <Item  Host="-secmail-360-cn.icoremail.net"   IsEnterpriseMailbox="1"  DefReceiveType="IMAP" 
+		 ImapServer="imap.secmail.360.cn" ImapSSL="2"
+		 Pop3Server="pop.secmail.360.cn" Pop3SSL="2"
+		 SmtpServer="smtp.secmail.360.cn" SmtpSSL="2"
+		 ImapNoValidFolder="Virus Items;Archive;病毒文件夹;广告邮件;订阅邮件;Archives;Notes"
+		 />
+
+  <!-- 不常用邮箱的配置 --> 	
+</Root>

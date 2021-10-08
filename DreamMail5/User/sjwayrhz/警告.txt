@@ -1,0 +1,23 @@
+﻿【警告！！】
+1、此目录为DreamMail5数据目录，如果你不知道每个文件/文件夹所代表的意义，请不要随意更改和删除，否则可能导致DreamMail5数据丢失。
+2、如果要迁移数据，请把整个目录的数据一并迁移，只有保证整个目录所有文件的完整性，迁移后DreamMail5才能正常使用！
+
+【参考信息】
+[Address]: 该目录存储通讯录中联系人的附件等信息
+[Cert]: 数字签名证书相关
+[IBC*]: IBC数字签名相关
+[MailFilter]: 邮件过滤器
+[MailIn]: 邮件接收时的临时目录，会存储正在接收的邮件内容
+[Mails]: 邮件数据目录，每个邮件对应一个数据文件
+[MailSign]: 邮件签名
+[Setting]: 当前用户选项、操作习惯、界面布局的记录
+[Templer]: 邮件模板
+BlackList.text: 黑名单
+CyContact.DB: 联系人分组、列表等信息，当联系人有附件时，附件保存在[Address]目录下
+CyFSearch.DB: 邮件搜索快速索引文件
+CyMain.DB: 主数据库文件，存储帐号、邮件列表等内容。邮件数据必须配合[Mails]目录才能正常使用
+CyMD5.DB: 邮件主标示，用户记录和判断哪些邮件收取过
+CySchedule.DB: 日历相关
+FastText.xml: 写信时插入的快速文本相关数据
+ProxyList.xml: 用户配置的代理列表
+WhiteList.txt: 白名单

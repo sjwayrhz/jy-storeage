@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root 
+  StationeryRoot="stationery\"
+>
+  <HTML><![CDATA[
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta charset="utf-8">
+<style type="text/css">
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+}
+.box{
+  margin: 1px 3px 1px 3px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.bg{
+  height:30px;
+  border: 1px solid #e8e8e8;
+  margin: 2px 0px 2px 0px;
+  cursor: pointer !important;
+}
+</style>
+</head>
+
+<body>
+  <div id="box" class="box">
+    <!--BEGIN_BG-->
+    <a href="%href%"><div class="bg" style="background-image:url(%file%)"></div></a>
+    <!--END_BG-->
+  </div>
+</body>
+
+</html>
+  ]]></HTML>
+</Root>

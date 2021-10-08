@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root 
+  Width="403"
+  Height="178"
+  FaceRoot="face\"
+>
+  <HTML><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+body{
+  cursor:default !important;
+  size:100%;
+}
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+}
+ul{ 
+  border-width:1px 0 0 1px; 
+  border-color:#ccc; 
+  border-style:solid; 
+  margin: 1px; 
+  zoom:1;
+}
+ul:after{
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden; 
+}
+li{ 
+  width:2em; 
+  height:2em; 
+  float:left;
+  border-width:0 1px 1px 0;
+  border-color:#ccc; 
+  border-style:solid; 
+  text-align:center; 
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+li i{
+  display:inline-block;
+  height:100%;
+  vertical-align:middle
+}
+li a img{ 
+  vertical-align: middle; 
+  max-width:1.9em; 
+  max-height:1.9em; 
+  cursor:pointer !important;
+}
+</style>
+
+</head>
+
+<body>
+<ul>
+<!--BEGIN_FACE--> 
+<li><i></i><a href="%href%" title="%title%"><img src="%file%"></a></li>
+<!--END_FACE--> 
+</ul>
+
+</body>
+</html>
+  ]]></HTML>
+</Root>

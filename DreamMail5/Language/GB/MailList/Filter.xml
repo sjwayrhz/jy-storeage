@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Item 
+		ID="0"
+		DisplayName="全部的邮件"
+		Description="在列表中显示全部邮件"
+		SQL=""
+		/>
+	<Item 
+		ID="1"
+		DisplayName="今天收到的未回复的邮件"
+		Description=""
+		SQL="(CreateDate &gt; datetime('now','start of day')) and (ReplyMailID=0)"
+		/>
+	<Item 
+		ID="2"
+		DisplayName="-"
+		Description=""
+		SQL=""
+		/>
+	<Item 
+		ID="3"
+		DisplayName="未读的邮件"
+		Description=""
+		SQL="IsRead=0"
+		/>
+	<Item 
+		ID="4"
+		DisplayName="已读的邮件"
+		Description=""
+		SQL="IsRead &lt;&gt; 0"
+		/>
+	<Item 
+		ID="5"
+		DisplayName="-"
+		Description=""
+		SQL=""
+		/>
+	<Item 
+		ID="6"
+		DisplayName="今天的邮件"
+		Description=""
+		SQL="[Date] &gt; datetime('now','start of day')"
+		/>
+	<Item 
+		ID="7"
+		DisplayName="本周的邮件"
+		Description=""
+		SQL="[Date]  between datetime(date(datetime('now',strftime('-%w day','now'))),'+1 second') and datetime(date(datetime('now',(6 - strftime('%w day','now'))||' day','1 day')),'-1 second') "
+		/>
+	<Item 
+		ID="8"
+		DisplayName="本月的邮件"
+		Description=""
+		SQL="[Date] between datetime('now','start of month','+1 second') and datetime('now','start of month','+1 month','-1 second')"
+		/>
+	<Item 
+		ID="9"
+		DisplayName="-"
+		Description=""
+		SQL=""
+		/>
+	<Item 
+		ID="10"
+		DisplayName="最近1周的邮件"
+		Description=""
+		SQL="[Date] &gt; datetime('now', '-7 day')"
+		/>
+	<Item 
+		ID="11"
+		DisplayName="最近1月的邮件"
+		Description=""
+		SQL="[Date] &gt; datetime('now', '-1 month')"
+		/>
+	<Item 
+		ID="12"
+		DisplayName="最近3月的邮件"
+		Description=""
+		SQL="[Date] &gt; datetime('now', '-3 month')"
+		/>
+	<Item 
+		ID="13"
+		DisplayName="最近1年的邮件"
+		Description=""
+		SQL="[Date] &gt; datetime('now', '-1 year')"
+		/>
+
+
+
+</Root>
+

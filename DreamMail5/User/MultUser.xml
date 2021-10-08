@@ -1,0 +1,4 @@
+﻿<?xml version="1.0"?>
+<Root DefaultUserID="1">
+  <Item ID="1" Index="1" IsDeleted="0" LoginPassMD5="" MainDBFile="{@APP}\User\sjwayrhz\CyMain.DB" UserName="sjwayrhz" HasLoginPass="0" LoginHint="" SaveLoginPass="0" SaveLoginPassValue="" FaceFile="" HashTestStr=""/>
+</Root>
